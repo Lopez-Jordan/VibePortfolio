@@ -1,0 +1,112 @@
+.experience-section {
+  padding: 6rem 2rem;
+  position: relative;
+  background: linear-gradient(135deg, #1a242e 0%, #0f1923 100%);
+  color: #ffffff;
+}
+
+.experience-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.experience-container h2 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.experience-card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 
+    0 4px 15px rgba(0, 0, 0, 0.2),
+    0 0 0 1px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 
+    0 6px 20px rgba(0, 0, 0, 0.25),
+    0 0 0 1px rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.experience-header {
+  margin-bottom: 1.5rem;
+}
+
+.experience-header h3 {
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin: 0;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.experience-header h4 {
+  font-size: 1.4rem;
+  color: #C4BA9D;
+  margin: 0.5rem 0;
+  font-weight: 500;
+}
+
+.period {
+  display: inline-block;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 0.5rem;
+  padding: 0.3rem 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+}
+
+.achievements {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.achievements li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.achievements li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #C4BA9D;
+}
+
+@media (max-width: 768px) {
+  .experience-section {
+    padding: 4rem 1.5rem;
+  }
+
+  .experience-container h2 {
+    font-size: 2.5rem;
+  }
+
+  .experience-header h3 {
+    font-size: 1.5rem;
+  }
+
+  .experience-header h4 {
+    font-size: 1.2rem;
+  }
+}

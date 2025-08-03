@@ -68,7 +68,7 @@ const Landing = () => {
             <h2>
               <Typewriter
                 options={{
-                  strings: ['Solutions Engineer', 'Full Stack Developer', 'Tech Innovator'],
+                  strings: ['Solutions Engineer', 'Full Stack Developer', 'AI Enthusiast'],
                   autoStart: true,
                   loop: true,
                   deleteSpeed: 50,
@@ -76,10 +76,20 @@ const Landing = () => {
                 }}
               />
             </h2>
-            <p className="tagline">Building innovative solutions with cutting-edge technology</p>
-            <div className="cta-buttons">
-              <button className="primary-btn">View Projects</button>
-              <button className="secondary-btn">Contact Me</button>
+            <p className="tagline">Crafting innovative solutions with modern technology</p>
+            <div className="social-links">
+              <a href="https://github.com/Lopez-Jordan" target="_blank" rel="noopener noreferrer" className="social-icon" title="GitHub">
+                <i className="fa-brands fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/jordanlopez123" target="_blank" rel="noopener noreferrer" className="social-icon" title="LinkedIn">
+                <i className="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="mailto:jordanlopezemail@gmail.com" className="social-icon" title="jordanlopezemail@gmail.com">
+                <i className="fa-regular fa-envelope"></i>
+              </a>
+              <a href="tel:9492784478" className="social-icon" title="(949) 278-4478">
+                <i className="fa-solid fa-phone"></i>
+              </a>
             </div>
           </animated.div>
         </div>

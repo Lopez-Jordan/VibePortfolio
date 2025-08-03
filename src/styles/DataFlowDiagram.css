@@ -1,0 +1,19 @@
+.data-flow-diagram {
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  display: block;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+}
+
+.data-flow-diagram text {
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+@media (max-width: 768px) {
+  .data-flow-diagram {
+    max-width: 100%;
+    height: auto;
+  }
+}
