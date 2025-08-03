@@ -1,7 +1,9 @@
 .education-section {
   padding: 6rem 2rem;
-  background: linear-gradient(135deg, #1a242e 0%, #0f1923 100%);
+  background: linear-gradient(135deg, #1e2a36 0%, #141f2a 100%);
   position: relative;
+  border-top: 1px solid rgba(196, 186, 157, 0.1);
+  border-bottom: 1px solid rgba(196, 186, 157, 0.1);
 }
 
 .education-container {

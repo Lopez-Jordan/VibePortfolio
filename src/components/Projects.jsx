@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/Projects.css';
 import projectImage from '../assets/UCshot.png';
 import flowDiagram from '../assets/flow.jpg';
+import surfImage from '../assets/Surf.png';
 
 const Projects = () => {
   const projects = [
@@ -52,6 +53,31 @@ const Projects = () => {
         "CloudWatch logging integration",
         "Splunk dashboard visualization",
         "Automated error detection"
+      ]
+    },
+    {
+      title: "Surf Report Application",
+      github: "https://github.com/Lopez-Jordan/SurfReport",
+      liveUrl: "https://floating-shelf-66988-88c62d989e6d.herokuapp.com/",
+      image: surfImage,
+      description: "A real-time surf conditions monitoring application providing detailed reports and forecasts for surf spots, helping surfers make informed decisions about when and where to surf.",
+      technologies: [
+        "Node.js",
+        "Express.js",
+        "React.js",
+        "Weather API",
+        "MongoDB",
+        "Heroku",
+        "RESTful APIs",
+        "JWT Authentication"
+      ],
+      features: [
+        "Real-time surf conditions",
+        "Spot-specific forecasts",
+        "User authentication",
+        "Interactive maps",
+        "Responsive design",
+        "Mobile-friendly interface"
       ]
     }
   ];

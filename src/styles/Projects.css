@@ -1,7 +1,18 @@
 .projects-section {
   padding: 6rem 2rem;
-  background: linear-gradient(135deg, #0f1923 0%, #1a242e 100%);
+  background: linear-gradient(135deg, #1e2a36 0%, #141f2a 100%);
   position: relative;
+}
+
+.projects-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at bottom left, rgba(196, 186, 157, 0.08) 0%, transparent 70%);
+  pointer-events: none;
 }
 
 .projects-container {
@@ -24,27 +35,29 @@
 }
 
 .project-card {
-  background: rgba(255, 255, 255, 0.08);
-  border-radius: 20px;
-  overflow: hidden;
-  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 
-    0 4px 15px rgba(0, 0, 0, 0.2),
-    0 0 0 1px rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .project-card:hover {
   transform: translateY(-5px);
-  box-shadow: 
-    0 6px 20px rgba(0, 0, 0, 0.25),
-    0 0 0 1px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2),
+              0 6px 20px rgba(0, 0, 0, 0.25),
+              0 0 0 1px rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.2);
   background: rgba(255, 255, 255, 0.12);
 }
 
 .project-content {
   padding: 2rem;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .project-image-container {
